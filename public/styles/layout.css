@@ -9,7 +9,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 /*
  * Global layout stuff
  */
@@ -18,8 +17,26 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source-Sans-Pro';
+  background-color: #314b91d3;
+  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+  right: 5;
+  left: 5%;
+  background-color: #314b91d3;
+  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+  
+
+}

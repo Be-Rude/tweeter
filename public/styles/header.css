@@ -1,0 +1,25 @@
+header {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgb(255, 187, 0);
+}
+
+#profile-pic {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  
+}
+
+#username {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  z-index: 4;
+}
+
+
