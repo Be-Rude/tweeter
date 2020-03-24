@@ -32,8 +32,9 @@ main {
   display: flex;
   justify-content: center;
   height: 100%;
+  top: 100px;
   width: 90%;
-  right: 5;
+  right: 5%;
   left: 5%;
   background-color: #314b91d3;
   background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
