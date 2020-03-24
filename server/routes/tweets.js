@@ -17,6 +17,13 @@ module.exports = function(DataHelpers) {
     });
   });
 
+  tweetsRoutes.post("/tweets", function(req, res) {
+    let newTweet = req.body.text;
+    DataHelpers.saveTweet((newTweet, err) => {
+      res.redirect('/');
+    })
+  })
+
   tweetsRoutes.post("/", function(req, res) {
     if (!req.body.text) {
       res.status(400).json({ error: 'invalid request: no data in POST body'});

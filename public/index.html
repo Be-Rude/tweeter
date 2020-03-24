@@ -13,6 +13,9 @@
     <!-- Nav Bar CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
+    <!-- New Tweet bar CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
     <!-- Header CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
@@ -47,12 +50,15 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p>Spicy jalapeno bacon ipsum dolor amet landjaeger ribeye ex picanha tempor magna buffalo kielbasa tail, ham et bacon reprehenderit doner labore. Ipsum do pork chop cupidatat. Andouille biltong filet mignon buffalo, pariatur meatloaf capicola brisket sed kielbasa. Meatball duis cupim deserunt, swine qui biltong sint. Sint esse chuck nisi. Turducken dolor chicken shankle sirloin, hamburger drumstick meatball nulla laboris pancetta ham hock rump. Enim cupim kevin mollit picanha in ball tip salami excepteur porchetta ground round.
-        Spare ribs elit commodo short ribs, ex aute sunt dolore pancetta irure in. Boudin ham id, deserunt quis in do picanha chicken salami. Pork belly brisket pork meatball enim. Tri-tip chislic aliquip ground round buffalo, short ribs ex beef minim tenderloin est prosciutto ad ham hock cupim. In velit beef pig ullamco fugiat.
-        Spicy jalapeno bacon ipsum dolor amet landjaeger ribeye ex picanha tempor magna buffalo kielbasa tail, ham et bacon reprehenderit doner labore. Ipsum do pork chop cupidatat. Andouille biltong filet mignon buffalo, pariatur meatloaf capicola brisket sed kielbasa. Meatball duis cupim deserunt, swine qui biltong sint. Sint esse chuck nisi. Turducken dolor chicken shankle sirloin, hamburger drumstick meatball nulla laboris pancetta ham hock rump. Enim cupim kevin mollit picanha in ball tip salami excepteur porchetta ground round.
-        Spare ribs elit commodo short ribs, ex aute sunt dolore pancetta irure in. Boudin ham id, deserunt quis in do picanha chicken salami. Pork belly brisket pork meatball enim. Tri-tip chislic aliquip ground round buffalo, short ribs ex beef minim tenderloin est prosciutto ad ham hock cupim. In velit beef pig ullamco fugiat.Spicy jalapeno bacon ipsum dolor amet landjaeger ribeye ex picanha tempor magna buffalo kielbasa tail, ham et bacon reprehenderit doner labore. Ipsum do pork chop cupidatat. Andouille biltong filet mignon buffalo, pariatur meatloaf capicola brisket sed kielbasa. Meatball duis cupim deserunt, swine qui biltong sint. Sint esse chuck nisi. Turducken dolor chicken shankle sirloin, hamburger drumstick meatball nulla laboris pancetta ham hock rump. Enim cupim kevin mollit picanha in ball tip salami excepteur porchetta ground round.
-        Spare ribs elit commodo short ribs, ex aute sunt dolore pancetta irure in. Boudin ham id, deserunt quis in do picanha chicken salami. Pork belly brisket pork meatball enim. Tri-tip chislic aliquip ground round buffalo, short ribs ex beef minim tenderloin est prosciutto ad ham hock cupim. In velit beef pig ullamco fugiat.Spicy jalapeno bacon ipsum dolor amet landjaeger ribeye ex picanha tempor magna buffalo kielbasa tail, ham et bacon reprehenderit doner labore. Ipsum do pork chop cupidatat. Andouille biltong filet mignon buffalo, pariatur meatloaf capicola brisket sed kielbasa. Meatball duis cupim deserunt, swine qui biltong sint. Sint esse chuck nisi. Turducken dolor chicken shankle sirloin, hamburger drumstick meatball nulla laboris pancetta ham hock rump. Enim cupim kevin mollit picanha in ball tip salami excepteur porchetta ground round.
-        Spare ribs elit commodo short ribs, ex aute sunt dolore pancetta irure in. Boudin ham id, deserunt quis in do picanha chicken salami. Pork belly brisket pork meatball enim. Tri-tip chislic aliquip ground round buffalo, short ribs ex beef minim tenderloin est prosciutto ad ham hock cupim. In velit beef pig ullamco fugiat.</p>
+      <section class="new-tweet">
+        <h2></h2> 
+        <form enctype="application/x-www-form-urlencoded" action="/tweets" method="POST">
+          <label for="tweet-text"></label>
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </form>
+      </section>
     </main>
   </body>
 </html>
