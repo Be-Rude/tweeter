@@ -1,12 +1,21 @@
 nav {
   font-family: 'Bungee';
   color: #FFF;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   padding-left: 1.5em;
   font-size: 1.5em;
   line-height: inherit;
+ }
+
+ h6 {
+   padding: 0px;
+   margin: -30px 40px 0px 0px;
+   font-size: 16px;
+   font-family: 'Source Sans Pro', sans-serif;
+
  }
 
  .navbar {
