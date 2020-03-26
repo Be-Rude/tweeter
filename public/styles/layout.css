@@ -16,8 +16,8 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
-  font-family: 'Source-Sans-Pro';
+  font-size: 23px;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #314b91d3;
   background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 }
@@ -25,19 +25,17 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
-/* main {
+ main {
   overflow-y: scroll;
-  position: relative;
-  display: flex;
+  position: relative; 
+  /* display: flex; */
   justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   height: 100%;
-  top: 100px;
+  top: 120px;
   width: 90%;
   right: 5%;
   left: 5%;
-  background-color: #314b91d3;
-  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
   
-
-} */
+}

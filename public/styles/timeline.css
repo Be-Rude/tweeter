@@ -1,0 +1,49 @@
+.timeline {
+  overflow-y: scroll;
+  justify-content: center;
+  /* align-items: bottom; */
+  box-sizing: border-box;
+  border: 2px solid #545149;;
+  /* height: 50%; */
+  /* top: 120px; */
+  color: #545149;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.user {
+  margin: 20px;
+  font-size: 20px
+}
+
+.avatar {
+  margin-bottom: 25px;
+}
+
+.tweetContent {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: inset #545149;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 15px;
+
+  
+}
+
+.footer {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+
+}
