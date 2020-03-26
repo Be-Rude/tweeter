@@ -1,16 +1,30 @@
 .timeline {
   overflow-y: scroll;
   justify-content: center;
-  /* align-items: bottom; */
   box-sizing: border-box;
   border: 2px solid #545149;;
-  /* height: 50%; */
-  /* top: 120px; */
+  margin: 40px 5px 20px 5px;
   color: #545149;
   font-size: 18px;
   font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
-  
+  transition: box-shadow .3s;
+}
+
+.timeline:hover .user {
+  display: inline;
+}
+
+.timeline .user {
+  display: none;
+}
+
+.timeline:hover {
+  box-shadow: 5px 5px 5px rgb(255, 187, 0);
+}
+
+.timeline:hover .avatar {
+  box-shadow: 5px 5px 5px rgb(255, 187, 0);
 }
 
 .timeline-header {
@@ -26,6 +40,7 @@
 
 .avatar {
   margin-bottom: 25px;
+  transition: box-shadow .3s;
 }
 
 .tweetContent {
@@ -36,14 +51,10 @@
   border-left: none;
   border-right: none;
   margin: 15px;
-
-  
 }
 
 .footer {
   margin: 15px;
   display: flex;
   justify-content: space-between;
-  margin: 15px;
-
 }
