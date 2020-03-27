@@ -63,11 +63,11 @@
     <main>
       <section class="flex-container new-tweet">
       
-        <form enctype="application/x-www-form-urlencoded" action="/tweets" method="POST">
+        <form>
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="tweetCount">
-            <button type="submit">Tweet</button>
+            <button id="newTweet" type="submit">Tweet</button>
             <output id="counter" name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
