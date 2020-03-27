@@ -23,24 +23,33 @@
   box-shadow: 5px 5px 5px rgb(255, 187, 0);
 }
 
-.timeline:hover .avatar {
+.timeline:hover img {
   box-shadow: 5px 5px 5px rgb(255, 187, 0);
 }
 
 .timeline-header {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
+  margin: 20px;
 }
 
 .user {
-  margin: 20px;
-  font-size: 20px
+  margin: 15px;
+  font-size: 20px;
+  display: flex;
+  justify-self: right;
 }
 
-.avatar {
+img {
+  display: flex;
+  justify-self: left;
   margin-bottom: 25px;
   transition: box-shadow .3s;
+}
+
+.person {
+  margin: 20px;
+  justify-self: left;
 }
 
 .tweetContent {
@@ -58,3 +67,4 @@
   display: flex;
   justify-content: space-between;
 }
+
