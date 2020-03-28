@@ -83,7 +83,6 @@ const $counter = $('#counter')
 $form.on('submit', (event) => {
   event.preventDefault();
   const formData = $form.serialize();
-  console.log(formData)
 
   if (formData === 'text=') {
   alert("you haven't tweeted!");
@@ -96,9 +95,12 @@ $form.on('submit', (event) => {
 
   $.post('/tweets', formData)
   .then((res) => {
-    console.log(res);
-  });
-  $('#tweet-text').val(''); 
+    $('#tweet-text').val(''); 
+    $("#tweetsContainer").html(res);
+    loadtweets(res);
+  })
+
+
 });
 
 
@@ -110,4 +112,7 @@ $.getJSON('/tweets')
 }
 loadtweets();
 
+
+
 })
+
