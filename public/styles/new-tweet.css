@@ -43,3 +43,19 @@ button:hover {
 .new-tweet {
   margin-top: 15px;
 }
+
+.alert1 {
+  padding: 10px;
+  border: 2px solid rgb(200, 0, 0);
+  color: rgb(200, 0, 0);
+  margin-bottom: 10px;
+  display: none;
+}
+
+.alert2 {
+  padding: 10px;
+  border: 2px solid rgb(225, 225, 0);
+  color: rgb(225, 225, 0);
+  margin-bottom: 10px;
+  display: none;
+}

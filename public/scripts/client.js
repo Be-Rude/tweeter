@@ -85,16 +85,20 @@ $form.on('submit', (event) => {
   const formData = $form.serialize();
 
   if (formData === 'text=') {
-  alert("you haven't tweeted!");
-  return;
-  } else 
-  if ($counter[0].value < 1 ) {
-    alert("Too many characters, no tweet for you!")
+      $( "#alert2" ).slideDown( "slow", function() {
+      });
+   return;
+   } else 
+   if ($counter[0].value < 1 ) {
+      $( "#alert1" ).slideDown( "slow", function() {
+      });
     return;
   }
 
   $.post('/tweets', formData)
   .then((res) => {
+    $( "#alert1" ).slideUp( "fast", function() {});
+    $( "#alert2" ).slideUp( "fast", function() {});
     $('#tweet-text').val(''); 
     $("#tweetsContainer").html(res);
     loadtweets(res);
