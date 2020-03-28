@@ -40,7 +40,7 @@
   justify-self: right;
 }
 
-img {
+.avatar {
   display: flex;
   justify-self: left;
   margin-bottom: 25px;
@@ -49,7 +49,6 @@ img {
 
 .person {
   margin: 20px;
-  justify-self: left;
 }
 
 .tweetContent {
@@ -60,6 +59,12 @@ img {
   border-left: none;
   border-right: none;
   margin: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 4em;
 }
 
 .footer {

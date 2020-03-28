@@ -13,13 +13,13 @@ $(() => {
 const createTweetElement = function(tweet) {
  const $article = $('<article>').addClass('timeline')
  const $header = $('<header>').addClass('timeline-header');
- const $avatar = $('<div>').addClass('avatar');
  const $pic = $('<img>').attr('src', tweet.user.avatars);
  const $name = $('<p>').addClass('person').text(tweet.user.name);
+ const $avatar = $('<div>').addClass('avatar');
  const $handle  = $('<div>').addClass('user').text(tweet.user.handle);
  const $content = $('<p>').addClass('tweetContent').text(tweet.content.text);
  const $footer = $('<footer>').addClass('footer');
- const $div = $('<div>')
+ const $actions = $('<div>').addClass('actions');
  const $flag = $('<i>').addClass('fas fa-flag');
  const $retweet = $('<i>').addClass('fas fa-retweet');
  const $heart = $('<i>').addClass('fas fa-heart');
@@ -53,17 +53,18 @@ const createTweetElement = function(tweet) {
  } else
  $time = $('<p>').text(seconds + " seconds ago");
 
+ $avatar.append($pic);
+ $avatar.append($name);
  $header.append($avatar);
- $header.append($pic);
- $header.append($name);
+ 
  $header.append($handle);
  $article.append($header);
  $article.append($content);
  $footer.append($time);
- $footer.append($div);
- $footer.append($flag);
- $footer.append($retweet);
- $footer.append($heart);
+ $actions.append($flag);
+ $actions.append($retweet);
+ $actions.append($heart);
+ $footer.append($actions);
  $article.append($footer);
  return $article;
 };
