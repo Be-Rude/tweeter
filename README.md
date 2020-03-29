@@ -7,8 +7,11 @@ You can view on either a desktop or mobile device. This allows you to Tweet and 
 ## Screenshots
 
 !["This is the desktop view of Tweeter!"](https://github.com/Be-Rude/tweeter/blob/master/docs/desktop%20view.png)
+This is the desktop view of Tweeter!
+
 
 !["This is the tablet view of Tweeter!"](https://github.com/Be-Rude/tweeter/blob/master/docs/tablet%20view.png)
+This the tablet view of Tweeter!
 
 
 ## Dependencies
