@@ -3,7 +3,7 @@
   justify-content: center;
   box-sizing: border-box;
   border: 2px solid #545149;;
-  margin: 40px 5px 20px 5px;
+  margin: 20px 5px 10px 5px;
   color: #545149;
   font-size: 18px;
   font-weight: bold;
@@ -58,6 +58,7 @@
   border-top: none;
   border-left: none;
   border-right: none;
+  word-wrap: normal;
   margin: 15px;
 }
 
@@ -72,4 +73,3 @@
   display: flex;
   justify-content: space-between;
 }
-

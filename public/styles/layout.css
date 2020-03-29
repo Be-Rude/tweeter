@@ -26,13 +26,7 @@ body {
  */
  main {
   overflow-y: scroll;
-  position: relative; 
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  height: 100%;
-  top: 120px;
-  width: 90%;
-  right: 5%;
-  left: 5%;
+  margin: 0px 10px 0px 10px;
+  width: 60%;
+  margin-left: 37%;
 }

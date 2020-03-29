@@ -10,6 +10,7 @@
 
 $(() => {
 
+  // creates timeline element after new tweet submission
 const createTweetElement = function(tweet) {
  const $article = $('<article>').addClass('timeline')
  const $header = $('<header>').addClass('timeline-header');
@@ -24,6 +25,8 @@ const createTweetElement = function(tweet) {
  const $retweet = $('<i>').addClass('fas fa-retweet');
  const $heart = $('<i>').addClass('fas fa-heart');
 
+
+ //used to calculate time since tweet was posted in timeline elements, by comparing tweet time to current time
  let currentTime = Math.floor(Date.now() / 1000);
  let unix_timestamp = Math.floor(tweet.created_at) / 1000;
  let elapsedTime = currentTime - unix_timestamp;
@@ -69,13 +72,14 @@ const createTweetElement = function(tweet) {
  return $article;
 };
 
+
+// takes new tweet text upon submission, checks to ensure it is valid (not empty, and not longer than 140 chars), saves the tweet to db, then posts to timeline.
+
 const renderTweets = function(tweets) {
   for (let tweet of tweets) {
   $('#tweetsContainer').append(createTweetElement(tweet));
   }
 }
-
-// renderTweets(data);
 
 const $form = $('form');
 const $counter = $('#counter')
@@ -90,7 +94,7 @@ $form.on('submit', (event) => {
       });
    return;
    } else 
-   if ($counter[0].value < 1 ) {
+   if ($counter[0].value < 0 ) {
       $( "#alert1" ).slideDown( "slow", function() {
       });
     return;
@@ -102,12 +106,10 @@ $form.on('submit', (event) => {
     $( "#alert2" ).slideUp( "fast", function() {});
     $('#tweet-text').val(''); 
     $("#tweetsContainer").html(res);
+    $counter.val(140);
     loadtweets(res);
   })
-
-
 });
-
 
 const loadtweets = function() {
 $.getJSON('/tweets') 
@@ -116,8 +118,5 @@ $.getJSON('/tweets')
 })
 }
 loadtweets();
-
-
-
 })
 

@@ -42,6 +42,9 @@
     <!-- Timeline CSS -->
     <link rel="stylesheet" href="/styles/timeline.css" type="text/css" />
 
+    <!-- Media CSS -->
+    <link rel="stylesheet" href="/styles/media.css" type="text/css" />
+
   </head>
 
 
@@ -52,24 +55,24 @@
         <span>tweeter</span>
         <h6 class="writeNewTweetLink">Write a new tweet</h6>
       </nav>
-
-   <section>
-    <header class="page-header">
+   
+     <section class="page-header">
+      <header>
       <div id="profile-pic">
           <img src="/images/profile-hex.png"> 
       </div>
       <div id="username">
           <h2>Amy Mansell</h2>
       </div>
-    </header>
-   </section>
+      </header>
+     </section>
 
-    <!-- Page-specific (main) content here -->
-    <main>
+     <main>
+     <div class="fullTimeline">
       <section class="flex-container new-tweet">
         <!-- alerts -->
-        <div class="alert1" id="alert1">Your tweet is too long. tl/dr. Please be more concise. :( </div>
-        <div class="alert2" id="alert2">Your tweet is empty! You must have something to say.</div>
+        <div class="alert1" id="alert1">Your tweet is too long, tl/dr. Please be more concise. :( </div>
+        <div class="alert2" id="alert2">Your tweet is empty! You must have something to say....</div>
         <!-- Tweet input box -->
         <form>
           <label for="tweet-text"></label>
@@ -80,9 +83,11 @@
           </div>
         </form>
       </section>
-
-      <section id="tweetsContainer"></section>
       
+      <!-- timeline of tweets created here-->
+      <section id="tweetsContainer"></section>
+
+    </div>
     </main>
   </body>
 </html>
