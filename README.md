@@ -2,11 +2,13 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+You can view on either a desktop or mobile device. This allows you to Tweet and see your timeline update in real time!
 
 ## Screenshots
 
 !["This is the desktop view of Tweeter!"](https://github.com/Be-Rude/tweeter/blob/master/docs/desktop%20view.png)
+
+!["This is the tablet view of Tweeter!"](https://github.com/Be-Rude/tweeter/blob/master/docs/tablet%20view.png)
 
 
 ## Dependencies
