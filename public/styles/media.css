@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  .page-header {
+    display: inherit;
+    position: relative;
+    margin: 100px 0px 0px 0px;
+    height: 350px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(255, 187, 0);
+  }
+  
+  #profile-pic {
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+  
+  #username {
+    display: flex;
+    font-family: 'Source Sans Pro';
+    justify-content: center;
+    color: #FFFFFF;
+    z-index: 4;
+  }
+
+  .timeline {
+    margin: 40px 5px 20px 5px;
+  }
+
+  main {
+    margin: 0px 10px 0px 15px;
+    width: 95%
+  }
+
+  .navbar {
+    background-color: rgb(255, 187, 0);
+    height: 100px;
+  }
+}
