@@ -25,3 +25,5 @@ This the tablet view of Tweeter!
 
 - Express
 - Node 5.10.x or above
+
+Created by Brad Ruud @ Lighthouse Labs 2020
