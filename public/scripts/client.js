@@ -88,13 +88,22 @@ $(() => {
     const formData = $form.serialize();
   
     if (formData === 'text=') {
-        $( "#alert2" ).slideDown( "slow", function() {
-        });
+      $("#alert2").slideDown("slow", function () {
+      })
+        .then(
+          setTimeout(function () {
+            $("#alert2").slideUp("slow", function () { });
+          }, 3000));
      return;
      } else 
      if ($counter[0].value < 0 ) {
-        $( "#alert1" ).slideDown( "slow", function() {
-        });
+        $("#alert1")
+          .slideDown("slow", function () {})
+          .then(
+            setTimeout(function () {
+              $("#alert1").slideUp("slow", function () {});
+            }, 3000)
+          );
       return;
     }
   
@@ -102,7 +111,7 @@ $(() => {
     .then((res) => {
       $( "#alert1" ).slideUp( "fast", function() {});
       $( "#alert2" ).slideUp( "fast", function() {});
-      $('#tweet-text').val(''); 
+      $('#tweet-text').val('');
       $("#tweetsContainer").html(res);
       $counter.val(140);
       loadtweets(res);
