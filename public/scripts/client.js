@@ -88,7 +88,7 @@ $(() => {
     const formData = $form.serialize();
   
     if (formData === 'text=') {
-      $("#alert2").slideDown("slow", function () {
+      $("#alert2").slideDown("fast", function () {
       })
         .then(
           setTimeout(function () {
@@ -98,7 +98,7 @@ $(() => {
      } else 
      if ($counter[0].value < 0 ) {
         $("#alert1")
-          .slideDown("slow", function () {})
+          .slideDown("fast", function () {})
           .then(
             setTimeout(function () {
               $("#alert1").slideUp("slow", function () {});
